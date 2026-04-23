@@ -19,7 +19,7 @@
     <nav class="site-nav">
       <a href="/">Home</a>
       <div class="site-nav__item has-children">
-        <a href="/services.html">Services</a>
+        <a href="/services.html" onclick="if(window.innerWidth<=820){event.preventDefault();this.parentElement.classList.toggle('open')}">Services</a>
         <ul class="site-nav__dropdown">
           <li><a href="/services/commercial-site-grading-and-prep.html">Site Grading &amp; Prep</a></li>
           <li><a href="/services/irrigation-systems.html">Irrigation Systems</a></li>
@@ -35,7 +35,7 @@
           <li><a href="/services/water-features-and-ponds.html">Water Features &amp; Ponds</a></li>
         </ul>
       </div>
-      <div class="site-nav__item has-children" onclick="if(window.innerWidth<=820){this.classList.toggle('open');event.stopPropagation()}"><a href="/about.html">About</a><ul class="site-nav__dropdown"><li><a href="/about.html">About G&amp;G</a></li><li><a href="/projects.html">Projects</a></li></ul></div>
+      <div class="site-nav__item has-children"><a href="/about.html" onclick="if(window.innerWidth<=820){event.preventDefault();this.parentElement.classList.toggle('open')}">About</a><ul class="site-nav__dropdown"><li><a href="/about.html">About G&amp;G</a></li><li><a href="/projects.html">Projects</a></li></ul></div>
       <a href="/service-areas.html">Service Areas</a>
       <a href="/contact.html">Contact</a>
       <div class="site-nav__mobile-cta">
@@ -43,7 +43,7 @@
         <a href="/contact.html" class="btn">Get a Quote</a>
       </div>
     </nav>
-    <button class="site-header__toggle" aria-label="Menu" aria-expanded="false" onclick="document.querySelector('.site-nav').classList.toggle('open');document.querySelector('.mobile-overlay').classList.toggle('active');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+    <button class="site-header__toggle" aria-label="Menu" aria-expanded="false" onclick="document.querySelector('.site-nav').classList.toggle('drawer-open');document.querySelector('.mobile-overlay').classList.toggle('active');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
       <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
     </button>
@@ -56,7 +56,7 @@
     </div>
   </div>
 </header>
-<div class="mobile-overlay" onclick="document.querySelector('.site-nav').classList.remove('open');this.classList.remove('active');document.querySelector('.site-header__toggle').setAttribute('aria-expanded','false')"></div>
+<div class="mobile-overlay" onclick="document.querySelector('.site-nav').classList.remove('drawer-open');this.classList.remove('active');document.querySelector('.site-header__toggle').setAttribute('aria-expanded','false')"></div>
 
 <!-- Hero -->
 <section class="hero" data-block-id="about:hero">

@@ -692,7 +692,7 @@ section.page-section.dark h2 { color: #fff; }
   position: fixed;
   inset: 0;
   background: rgba(15, 23, 42, 0.4);
-  z-index: 49;
+  z-index: 39;
   opacity: 0;
   transition: opacity var(--transition);
 }
@@ -724,7 +724,7 @@ section.page-section.dark h2 { color: #fff; }
     transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
     white-space: normal;
   }
-  .site-nav.open { transform: translateX(0); }
+  .site-nav.drawer-open { transform: translateX(0); }
 
   .site-nav > a,
   .site-nav__item > a {
