@@ -775,6 +775,7 @@ section.page-section.dark h2 { color: #fff; }
     padding: 10px 16px 10px 32px;
     font-size: 0.9375rem;
     border-bottom: 1px solid var(--color-border);
+    white-space: normal;
   }
 
   /* Mobile CTA inside drawer */
