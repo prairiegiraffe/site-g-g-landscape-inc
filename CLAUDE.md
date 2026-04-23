@@ -119,6 +119,11 @@ Build these as standalone HTML files. Each file should be a complete document
 6. **service-areas.html** — Area cards grid (if multiple areas)
 
 ### Page Structure Rules
+- **ALL internal links must use RELATIVE paths** — never use `/api/projects/` URLs
+  - From root pages: `href="services/hardscapes.html"` or `href="about.html"`
+  - From service pages: `href="../about.html"` or `href="../contact.html"`
+  - CSS from root: `href="css/styles.css"` — from subdirectories: `href="../css/styles.css"`
+  - The `/api/projects/.../serve/` URLs are for the platform editor only, NEVER in page HTML
 - Every `<section>` needs `data-block-id="page:section-name"` (for the platform editor)
 - Editable text slots get `data-content="slot-name"` attributes
 - Contact form needs `data-devtools-form` and `data-form-type="contact"`
@@ -166,7 +171,7 @@ image via AI, saves it to R2, and returns a URL you can use directly in `<img sr
 ```bash
 curl -X POST "https://devtools.prairiegiraffe.com/api/projects/proj_80x27mqq/sites/49/generate-image" \
   -H "Content-Type: application/json" \
-  -H "Authorization: Bearer dtk_c926152efc247efae30e8ef05fba7fd2a23862a7d78d0cbf4028da937090730d" \
+  -H "Authorization: Bearer dtk_27625d1c6a10c7c6a9c688ab356421f2f16fe9b26f40869a92cbf3ec41d50661" \
   -d '{
     "prompt": "Heavy equipment excavator on an oilfield pad construction site, Wyoming prairie, golden hour",
     "filename": "hero-excavation",
