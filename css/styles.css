@@ -823,6 +823,10 @@ section.page-section.dark h2 { color: #fff; }
   .feature-row.reverse > :first-child { order: 0; }
   .feature-row.reverse > :last-child { order: 0; }
   .project-detail { grid-template-columns: 1fr; }
+  .process-list::before { left: 17px; }
+  .process-list li { gap: 16px; }
+  .process-list li::before { width: 36px; height: 36px; font-size: 0.9375rem; }
+  .process-list li p { font-size: 0.9375rem; }
   .hero__grid { grid-template-columns: 1fr; gap: 32px; }
   .hero__image { aspect-ratio: 16 / 10; transform: none; max-height: 360px; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
