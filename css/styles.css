@@ -433,6 +433,14 @@ section.page-section.dark h2 { color: #fff; }
 }
 .feature-row__image img { width: 100%; height: 100%; object-fit: cover; }
 
+/* Project detail layout */
+.project-detail {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
 /* Service detail: process timeline */
 .process-list {
   list-style: none;
@@ -814,6 +822,7 @@ section.page-section.dark h2 { color: #fff; }
   .feature-row { grid-template-columns: 1fr; gap: 32px; }
   .feature-row.reverse > :first-child { order: 0; }
   .feature-row.reverse > :last-child { order: 0; }
+  .project-detail { grid-template-columns: 1fr; }
   .hero__grid { grid-template-columns: 1fr; gap: 32px; }
   .hero__image { aspect-ratio: 16 / 10; transform: none; max-height: 360px; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
