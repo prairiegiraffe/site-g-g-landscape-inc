@@ -37,7 +37,15 @@
       <a href="/about.html">About</a>
       <a href="/service-areas.html">Service Areas</a>
       <a href="/contact.html">Contact</a>
+      <div class="site-nav__mobile-cta">
+        <a href="tel:3076829900" class="btn btn--outline">Call (307) 682-9900</a>
+        <a href="/contact.html" class="btn">Get a Quote</a>
+      </div>
     </nav>
+    <button class="site-header__toggle" aria-label="Menu" aria-expanded="false" onclick="document.querySelector('.site-nav').classList.toggle('open');document.querySelector('.mobile-overlay').classList.toggle('active');this.setAttribute('aria-expanded',this.getAttribute('aria-expanded')==='true'?'false':'true')">
+      <svg class="icon-open" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
     <div class="site-header__cta">
       <a href="tel:3076829900" class="site-header__phone">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -47,6 +55,7 @@
     </div>
   </div>
 </header>
+<div class="mobile-overlay" onclick="document.querySelector('.site-nav').classList.remove('open');this.classList.remove('active');document.querySelector('.site-header__toggle').setAttribute('aria-expanded','false')"></div>
 
 <section class="hero" data-block-id="hero">
   <div class="hero__bg" style="background-image: url('https://devtools.prairiegiraffe.com/api/projects/proj_80x27mqq/sites/49/serve/assets/feature-commercial-5e0f9643.webp');"></div>
