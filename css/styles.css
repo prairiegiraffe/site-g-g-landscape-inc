@@ -353,7 +353,7 @@ section.page-section.dark h2 { color: #fff; }
 .service-card p { color: var(--color-muted); margin: 0; font-size: 0.9375rem; }
 .service-card__arrow {
   position: absolute;
-  bottom: 28px; right: 28px;
+  top: 28px; right: 28px;
   color: var(--color-primary);
   opacity: 0;
   transform: translateX(-8px);
