@@ -30,11 +30,13 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 html, body { margin: 0; padding: 0; }
+html { overflow-x: hidden; }
 body {
   font-family: var(--font-body);
   color: var(--color-dark);
   line-height: 1.6;
   background: #fff;
+  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
