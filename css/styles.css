@@ -349,7 +349,7 @@ section.page-section.dark h2 { color: #fff; }
 }
 .service-card__icon svg { width: 28px; height: 28px; }
 .service-card:hover .service-card__icon { background: var(--color-primary); color: var(--color-on-primary); }
-.service-card h3 { color: var(--color-dark); margin-bottom: 8px; font-size: 1.25rem; }
+.service-card h3 { color: var(--color-dark); margin-bottom: 8px; font-size: 1.25rem; padding-right: 32px; }
 .service-card p { color: var(--color-muted); margin: 0; font-size: 0.9375rem; }
 .service-card__arrow {
   position: absolute;
