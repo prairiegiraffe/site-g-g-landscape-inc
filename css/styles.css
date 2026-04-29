@@ -133,7 +133,7 @@ hr { border: 0; height: 1px; background: var(--color-border); margin: 3rem 0; }
   letter-spacing: -0.02em;
   display: inline-flex; align-items: center; gap: 10px;
 }
-.site-header__brand img { max-height: 42px; width: auto; }
+.site-header__brand img { max-height: 63px; width: auto; }
 .site-nav { display: flex; gap: 4px; align-items: center; }
 .site-nav a {
   color: var(--color-dark);
